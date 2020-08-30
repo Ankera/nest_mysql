@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 150px;
+            height: 24px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">多上传文件</h1>
+    <form action="http://127.0.0.1:3000/upload/doMoreAdd" method="POST" enctype="multipart/form-data">
+        <input type="text" name="title" placeholder="新闻标题">
+        <br>
+        <input type="text" name="keyword" placeholder="关键词">
+        <br>
+        <input type="text" name="author" placeholder="作者">
+        <br>
+        <input type="file" name="pic1" placeholder="文件">
+        <br>
+        <input type="file" name="pic2" placeholder="文件">
+        <br>
+        <input type="text" name="status" placeholder="状态">
+        <br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
